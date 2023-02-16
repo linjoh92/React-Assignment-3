@@ -6,13 +6,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel:init": "vercel init vite",
+    "vercel": "vercel"
   },
   "dependencies": {
     "date-fns": "^2.29.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "use-interval": "^1.4.0"
+    "use-interval": "^1.4.0",
+    "vercel": "^28.16.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

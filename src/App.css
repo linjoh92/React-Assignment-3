@@ -199,7 +199,6 @@ a.side-info{
   }
 
   .content-container{
-    bottom: 370px;
     color: var(--primary-color);
     margin: 10px;
     max-width: 320px;
