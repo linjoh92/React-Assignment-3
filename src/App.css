@@ -1,0 +1,277 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color :#946AD9;
+  font-size: 14px;
+  font-family: oswald;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+}
+
+#root {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-image: url("./assets/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.socialamedia-icons{
+  cursor: pointer;
+  display: flex;
+  height: 15px;
+  justify-content: center;
+  margin: 25px;
+  width: 60px;
+}
+
+.icon:hover, a.side-info:hover {
+  opacity: 60%;
+}
+
+.content-container, .counter-container{
+  align-items: center;
+  color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+  margin: 25px;
+  max-width: 550px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.content-rubrik {
+  font-size: 3.8rem;
+  font-weight: 300;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+}
+
+.content-rubrik, .content-text{
+  padding: 0;
+  margin: 0;
+}
+
+.content-text{
+  font-size: 1.2rem;
+  padding: 8px;  
+  text-align-last: center;
+  text-align: justify;
+}
+
+.counter-container{
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.bold-time{
+  font-weight: 500;
+}
+
+.counter-container p {
+  margin: 0;
+  letter-spacing: 0.3rem;
+}
+
+.side-container{
+  color: var(--primary-color);
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-right: 25px;
+  max-width: 150px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  writing-mode: vertical-rl;
+}
+
+.side-rubrik{
+  font-family: Teko;
+  font-size: 6.5rem;
+  font-weight: 800;
+  letter-spacing: 0.6rem;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.side-info-container{
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  letter-spacing: 0.2rem;
+  padding: 80px 0;
+}
+
+a.side-info{
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .content-rubrik{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: 0.8rem;
+    line-height: 4.5rem;
+  }
+  
+  .content-container, .counter-container{
+    max-width: 330px;
+  }
+
+  .counter-container{
+    column-gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    row-gap: 0px;
+  }
+
+  .counter-container p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .side-container{
+    margin-right: 5px;
+    max-width: 120px;
+  }
+
+  h2.side-rubrik{
+    font-size: 5.5rem;
+  }
+
+  .side-info-container{
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media only screen and (max-width: 625px) {
+
+  #root {
+    background-image: url("./assets/background_tablet.jpg");
+  }
+
+  .App{
+    min-height: 926px;
+  }
+
+  .content-container{
+    bottom: 370px;
+    color: var(--primary-color);
+    margin: 10px;
+    max-width: 320px;
+    position: absolute;
+  }
+
+  .counter-container{
+    position: relative;
+    top: 180px;
+  }
+
+  .content-rubrik {
+    font-size: 2.3rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    line-height: 4rem;
+    width: 100%;
+  }
+
+  .content-text{
+    font-size: 1rem;
+    padding: 0;
+  }
+ 
+  p.counter-container{
+    color: var(--secondary-color);
+    font-size: 2.5rem;
+  }
+
+
+  .side-container{
+    align-items: center;
+    color: var(--secondary-color);
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    margin: 0;
+    max-width: 100%;
+    min-height: 926px;
+    width: 100%;
+    writing-mode:unset;
+  }
+
+  .side-rubrik{
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    line-height: 4.5rem;
+    max-width: 430px;
+    position: absolute;
+    top: 220px;
+  }
+
+  .side-info-container{
+    bottom: 20px;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 0;
+    position: absolute;
+  }
+
+  a.side-info{
+    color: var(--secondary-color);
+  }
+
+  .socialamedia-icons{
+  bottom: 50px;
+  gap: 50px;
+  position: absolute;
+  width: 100%;
+  }
+
+}
+
+
+        

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('./oswald/oswald-light-webfont.woff') format('truetype');
+    src: url('./oswald/oswald-light-webfont.woff2') format('truetype');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./oswald/oswald-regular-webfont.woff') format('truetype');
+    src: url('./oswald/oswald-regular-webfont.woff2') format('truetype');
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./oswald/oswald-medium-webfont.woff') format('truetype');
+    src: url('./oswald/oswald-medium-webfont.woff2') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('./oswald/oswald-bold-webfont.woff') format('truetype');
+    src: url('./oswald/oswald-bold-webfont.woff2') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('./teko/teko-light-webfont.woff') format('truetype');
+    src: url('./teko/teko-light-webfont.woff2') format('truetype');
+    font-weight: 300;
+    font-style: light;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('./teko/teko-regular-webfont.woff') format('truetype');
+    src: url('./teko/teko-regular-webfont.woff2') format('truetype');
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('./teko/teko-semibold-webfont.woff') format('truetype');
+    src: url('./teko/teko-semibold-webfont.woff2') format('truetype');
+    font-weight: 500;
+    font-style: semibold;
+}
+
+@font-face {
+    font-family: 'Teko';
+    src: url('./teko/teko-bold-webfont.woff') format('truetype');
+    src: url('./teko/teko-bold-webfont.woff2') format('truetype');
+    font-weight: 700;
+    font-style: bold;
+}
