@@ -233,7 +233,6 @@ a.side-info{
     align-items: center;
     color: var(--secondary-color);
     display: flex;
-    height: 100vh;
     justify-content: space-between;
     margin: 0;
     max-width: 100%;
@@ -247,8 +246,8 @@ a.side-info{
     letter-spacing: 0.4rem;
     line-height: 4.5rem;
     max-width: 430px;
-    position: absolute;
-    top: 220px;
+    position: relative;
+    top: 250px;
   }
 
   .side-info-container{
