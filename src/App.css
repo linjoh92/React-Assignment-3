@@ -22,7 +22,7 @@ body{
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
   margin: 0;
 }
 
@@ -30,9 +30,8 @@ body{
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
-  position: absolute;
   width: 100%;
 }
 
@@ -147,6 +146,11 @@ a.side-info{
 
 @media only screen and (max-width: 900px) {
 
+  body{
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   .content-rubrik{
     font-size: 4rem;
     font-weight: 500;
@@ -174,11 +178,12 @@ a.side-info{
 
   .friday-class {
     display: flex;
+    font-weight: 500;
   }
 
   .side-container{
     margin-right: 5px;
-    max-width: 120px;
+    max-width: 125px;
   }
 
   .side-rubrik{
@@ -186,8 +191,16 @@ a.side-info{
   }
 
   .side-info-container{
-    padding: 0;
     justify-content: space-evenly;
+    padding: 0;
+  }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 319px) 
+and (max-device-width: 480px) {
+  body {
+    height:  calc(100vh + 200px);
   }
 }
 
