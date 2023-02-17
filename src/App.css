@@ -10,11 +10,6 @@
 }
 
 body{
-  margin: 0;
-  height: 100vh;
-}
-
-#root {
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -22,6 +17,11 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+
+#root {
   height: 100vh;
   margin: 0;
 }
@@ -172,6 +172,11 @@ a.side-info{
     text-align: left;
   }
 
+  .friday-class {
+    display: flex;
+    font-weight: bold;
+  }
+
   .side-container{
     margin-right: 5px;
     max-width: 120px;
@@ -190,8 +195,11 @@ a.side-info{
 
 @media only screen and (max-width: 625px) {
 
-  #root {
+  body{
     background-image: url("./assets/background_tablet.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-size: cover;
   }
 
   .App{
