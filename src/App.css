@@ -154,12 +154,16 @@ a.side-info{
   .content-rubrik{
     font-size: 4rem;
     font-weight: 500;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.8rem;
     line-height: 4.5rem;
+  }
+
+  .content-text {
+    font-size: 1rem;
   }
   
   .content-container, .counter-container{
-    max-width: 320px;
+    max-width: 340px;
   }
 
   .counter-container{
