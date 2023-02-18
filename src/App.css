@@ -39,10 +39,9 @@ body{
 .socialamedia-icons{
   cursor: pointer;
   display: flex;
-  height: 15px;
+  margin: 0 0 40px;
   justify-content: center;
-  margin: 20px;
-  width: 60px;
+  gap: 40px;
 }
 
 .icon:hover, a.side-info:hover {

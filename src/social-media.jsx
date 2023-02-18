@@ -8,9 +8,9 @@ import youtube from './assets/youtube.svg'
 const SocialMedia = () => {
   return (
   <div className='socialamedia-icons'>
-    <img src={facebook} alt="facebook-icon" className='icon'/>
-    <img src={instagram} alt="instagram-icon" className='icon'/>
-    <img src={youtube} alt="youtube-icon" className='icon'/>
+    <img src={facebook} alt="facebook-icon" className='icon' height='18px'/>
+    <img src={instagram} alt="instagram-icon" className='icon' height='18px'/>
+    <img src={youtube} alt="youtube-icon" className='icon' height='18px'/>
   </div>
   )
 }
