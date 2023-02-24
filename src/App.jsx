@@ -11,7 +11,7 @@ import useInterval from 'use-interval'
 
 function getInterval () {
     const today = new Date()
-    const friday = parseISO('2023-02-17T00:00:00')
+    const friday = parseISO('2023-02-24T00:00:00')
     if (today > friday) {
       friday.setDate(friday.getDate() + 7);
     }
