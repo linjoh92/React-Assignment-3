@@ -5,15 +5,16 @@ import SocialMedia from './social-media'
 import TextContent from './Text-content'
 import Counter from './Counter'
 import SideContent from './side-content'
-import {parseISO, intervalToDuration} from 'date-fns'
+import {parseISO, intervalToDuration, format} from 'date-fns'
 import useInterval from 'use-interval'
 
 
 function getInterval () {
     const today = new Date()
-    const friday = parseISO('2023-02-24T00:00:00')
-    if (today > friday) {
-      friday.setDate(friday.getDate() + 7);
+    const todayDay = format(new Date(),'EEEE')
+    const friday = parseISO('2023-02-17T00:00:00')
+    if (todayDay === 'Friday') {
+      friday.setDate(today.getDate() + 7);
     }
     const interval = intervalToDuration({
     start: today,
@@ -21,6 +22,8 @@ function getInterval () {
   })
   return interval
 }
+
+
 
 function App() {
 
