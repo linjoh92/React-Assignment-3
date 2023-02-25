@@ -5,33 +5,38 @@ import SocialMedia from './social-media'
 import TextContent from './Text-content'
 import Counter from './Counter'
 import SideContent from './side-content'
-import {parseISO, intervalToDuration, format} from 'date-fns'
+import {intervalToDuration, startOfISOWeek, addDays } from 'date-fns'
 import useInterval from 'use-interval'
 
 
-function getInterval () {
-    const today = new Date()
-    const todayDay = format(new Date(),'EEEE')
-    const friday = parseISO('2023-02-17T00:00:00')
-    if (todayDay === 'Friday') {
-      friday.setDate(today.getDate() + 7);
-    }
-    const interval = intervalToDuration({
-    start: today,
-    end: friday
-  })
-  return interval
+
+function calculateNextFriday() {
+  const today = new Date();
+  const monday = startOfISOWeek(today); 
+  const friday = addDays(monday, 4);
+  if (today > friday) { 
+    return addDays(friday, 7);
+  }
+  return friday;
 }
 
-
+function getTimeUntilNextFriday() {
+  const today = new Date();
+  const nextFriday = calculateNextFriday();
+  const interval = intervalToDuration({
+    start: today,
+    end: nextFriday
+  });
+  return interval;
+}
 
 function App() {
 
-  const [untilFriday, setUntilFriday] = useState(getInterval())
+  const [untilFriday, setUntilFriday] = useState(getTimeUntilNextFriday())
   const [count, setCount] = useState(0)
 
   useInterval(() => {
-    const interval = getInterval()
+    const interval = getTimeUntilNextFriday()
     setUntilFriday(interval)
     setCount(count + 1);
   }, 1000);
