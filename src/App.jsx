@@ -8,8 +8,6 @@ import SideContent from './side-content'
 import {intervalToDuration, startOfISOWeek, addDays } from 'date-fns'
 import useInterval from 'use-interval'
 
-
-
 function calculateNextFriday() {
   const today = new Date();
   const monday = startOfISOWeek(today); 
